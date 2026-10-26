@@ -1,0 +1,13 @@
+course: 전자전기 기초
+audience: 비전공자
+lectures:
+  - {id: "01", dir: 01_what_is_electricity, title: 전기란 무엇인가}
+  - {id: "02", dir: 02_voltage_current_resistance, title: 전압·전류·저항}
+  - {id: "03", dir: 03_ohms_law, title: 옴의 법칙}
+  - {id: "04", dir: 04_series_parallel, title: 직렬과 병렬}
+  - {id: "05", dir: 05_power_energy, title: 전력과 에너지}
+  - {id: "06", dir: 06_dc_ac, title: 직류와 교류}
+  - {id: "07", dir: 07_capacitor_inductor, title: 커패시터와 인덕터}
+  - {id: "08", dir: 08_semiconductor_diode, title: 반도체와 다이오드}
+  - {id: "09", dir: 09_transistor, title: 트랜지스터}
+  - {id: "10", dir: 10_digital_basics, title: 디지털 기초}

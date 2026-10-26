@@ -1,0 +1,133 @@
+# 01강 전기란 무엇인가
+# 구성: OpenStax College Physics 2e 각 절의 흐름(학습 목표 → 개념 → PhET 탐구 → 요약 → 확인 문제)을 따르고,
+#       설명 순서는 SparkFun "What is Electricity?"(원자 → 전하의 힘 → 도체 → 정전기/전류)를 참고.
+# 그림 참조:
+#   illustration: 01/<이름>  → assets/illustrations/01/<이름>.png  (Google Flow, 없으면 자리표시)
+#   animation: <이름>        → build/media/<이름>.mp4              (manim)
+#   source: 슬라이드 아래에 표시되는 근거 (references/bibliography.md)
+id: "01"
+title: 전기란 무엇인가
+subtitle: 눈에 보이지 않는 작은 알갱이, 전자 이야기
+
+slides:
+  - layout: cover
+    illustration: 01/cover
+
+  - layout: question
+    kicker: 오늘의 질문
+    text: 스위치를 누르는 순간, 전선 속에서는 무슨 일이 일어날까?
+    illustration: 01/light_switch
+    notes: |
+      수강생에게 먼저 추측을 물어본다. "전기가 발전소에서 날아온다", "전선 속을 빛처럼 달린다" 등
+      다양한 답을 받아 칠판에 적어 두고, 수업 끝(전류 슬라이드·퀴즈 Q3)에서 다시 확인한다.
+
+  - layout: objectives
+    title: 학습 목표
+    poster: a01_atom
+    goals:
+      - 물질 속에 (−) 전기를 띤 전자가 있고, 전자가 이동할 수 있음을 설명할 수 있다
+      - 전하끼리 밀고 당기는 규칙과, 도체·부도체의 차이를 말할 수 있다
+      - 정전기와 전류가 모두 '전자의 이동'으로 생긴다는 것을 설명할 수 있다
+    source: OpenStax College Physics 2e, 18.1·18.2·20.1절 학습 목표를 재구성
+    notes: |
+      OpenStax 18.1 "Define electric charge and describe how the two types of charge interact",
+      18.2 "Define conductors and insulators", 20.1 "Define electric current"를 비전공자 눈높이로 바꾼 것.
+
+  - layout: video
+    title: 모든 물질은 원자로 이루어져 있다
+    animation: a01_atom
+    points:
+      - {label: 원자핵, color: proton, text: "가운데 묵직한 덩어리. (+) 전기를 띤다"}
+      - {label: 전자, color: electron, text: "원자핵보다 수천 배 가벼운 알갱이. (−) 전기를 띤다"}
+      - {label: 핵심, color: amber, text: "가벼운 전자는 원자를 떠나 다른 곳으로 옮겨 갈 수 있다"}
+    source: OpenStax 18.1 · NIST CODATA (양성자/전자 질량비 ≈ 1836)
+    notes: |
+      원자 그림은 '태양계 모형'으로 단순화한 것임을 짚어 준다(OpenStax 그림 18.5도 같은 단순화를 사용).
+      양성자 하나만 해도 전자보다 약 1836배 무겁다 → 움직이는 쪽은 주로 가벼운 전자.
+
+  - layout: video
+    title: 같은 전기는 밀어내고, 다른 전기는 끌어당긴다
+    animation: a01_charges
+    points:
+      - {label: "+ 와 −", color: amber, text: 서로 끌어당긴다}
+      - {label: "− 와 −  /  + 와 +", color: electron, text: 서로 밀어낸다}
+      - {label: 크기는 같다, color: proton, text: "전자와 양성자의 전기량은 크기가 같고 부호만 반대"}
+    source: OpenStax College Physics 2e, 18.1
+    notes: |
+      "Like charges repel, whereas unlike charges attract." (OpenStax 18.1)
+      자석의 N극·S극과 비슷하다고 연결해 주면 이해가 빠르다(다른 현상이라는 점은 06강에서).
+
+  - layout: video
+    title: 전자가 잘 다니는 물질, 못 다니는 물질
+    animation: a01_conductor
+    points:
+      - {label: 도체, color: amber, text: "자유전자가 있어 전기가 잘 흐른다 (구리 등 금속, 소금물)"}
+      - {label: 부도체, color: muted, text: "전자가 묶여 있어 거의 흐르지 않는다 (고무, 플라스틱, 유리)"}
+      - {label: 그래서 전선은, color: electron, text: "속은 구리(도체), 겉은 플라스틱(부도체)"}
+    source: OpenStax College Physics 2e, 18.2
+    notes: |
+      실제 전선 단면(구리심 + 피복)을 보여 주면 좋다 → 실물 사진 준비 필요(assets/photos/01/wire_cross_section).
+      OpenStax: 순수한 물은 부도체, 소금물은 도체 → "젖은 손으로 콘센트 만지지 말 것"과 연결.
+
+  - layout: figure
+    title: 정전기 — 전자가 이사 가면 생기는 일
+    illustration: 01/static_balloon
+    steps:
+      - 풍선으로 머리카락을 문지른다
+      - 머리카락의 전자가 풍선으로 옮겨 간다 (새로 생기는 게 아니라 '이사')
+      - "풍선은 (−), 머리카락은 (+) → 서로 끌어당겨 머리카락이 선다"
+    source: OpenStax College Physics 2e, 18.1 (전하 보존 법칙)
+    notes: |
+      OpenStax의 정전기 예: 카펫 위를 걷다 생기는 불꽃, 건조기 속 옷이 달라붙는 현상, 번개.
+      핵심은 '전하 보존' — 문질러도 전하는 새로 만들어지지 않고 옮겨 갈 뿐이다.
+
+  - layout: video
+    title: 전류 = 전자들이 다 함께 한 방향으로 이동하는 것
+    animation: a01_current
+    points:
+      - {label: "OFF", color: muted, text: "전자는 제자리에서 꼼지락거릴 뿐, 어디로도 가지 않는다"}
+      - {label: "ON", color: amber, text: "건전지가 밀어 주면 전자들이 줄지어 이동 → 전구가 켜진다"}
+    callout: "굵은 구리선에 20 A가 흘러도 전자는 1초에 약 0.45 mm — 달팽이보다 느리다. 그런데 불이 바로 켜지는 이유는? 전선 속 전자들이 서로 밀어, '밀어라'는 신호가 1초에 1억 m가 넘는 속도로 퍼지기 때문!"
+    source: OpenStax College Physics 2e, 20.1 예제 20.3 (표류 속도)
+    notes: |
+      OpenStax 예제 20.3: 12게이지(지름 2.053 mm) 구리선, 20.0 A → 표류 속도 4.53×10⁻⁴ m/s.
+      신호는 10⁸ m/s 수준으로, 전하 자체보다 약 10¹²배 빠르다.
+      비유: 구슬이 꽉 찬 호스 — 한쪽에서 밀면 반대쪽 구슬이 즉시 튀어나온다.
+      (전류의 '방향'은 관례상 전자의 이동과 반대 — 02강에서 다룸)
+
+  - layout: try
+    title: 직접 해보기 — PhET 시뮬레이션
+    name: 풍선과 정전기
+    url: https://phet.colorado.edu/ko/simulations/balloons-and-static-electricity
+    steps:
+      - 풍선을 스웨터에 문질러 보세요. 무엇이 어디로 옮겨 가나요?
+      - 풍선을 벽 가까이 가져가 보세요. 왜 달라붙을까요?
+      - 풍선 두 개를 모두 문지른 뒤 가까이 대 보세요. 어떻게 되나요?
+    source: PhET Interactive Simulations, University of Colorado Boulder
+    notes: |
+      OpenStax 18.1의 PhET Explorations와 같은 시뮬레이션. "Why does a balloon stick to your sweater?"
+      휴대폰으로 QR을 찍어 3분간 직접 조작하게 한 뒤 답을 발표.
+
+  - layout: summary
+    title: 핵심 정리
+    cards:
+      - {color: electron, head: 전자, text: "모든 물질 속의 (−) 알갱이. 가벼워서 원자를 떠나 이동할 수 있다"}
+      - {color: proton, head: 전하, text: "같은 부호는 밀고, 다른 부호는 당긴다. 문질러도 새로 생기지 않고 옮겨 갈 뿐"}
+      - {color: amber, head: 전류, text: "도체 속 전자들이 다 함께 한 방향으로 이동하는 것"}
+
+  - layout: quiz
+    title: 개념 확인 OX 퀴즈
+    items:
+      - {q: 전자는 (+) 전기를 띤다, a: X, why: "전자는 (−), 원자핵이 (+)"}
+      - {q: 풍선을 문지르면 전기가 새로 만들어진다, a: X, why: "전자가 옮겨 갈 뿐, 전체 전하량은 그대로 (전하 보존)"}
+      - {q: 전선 겉의 플라스틱은 전기가 잘 통하지 않는 부도체다, a: O, why: "속 구리는 도체, 겉 피복은 부도체"}
+      - {q: 스위치를 켜면 발전소의 전자가 빛의 속도로 날아와 불을 켠다, a: X, why: "전선 속에 이미 있던 전자들이 한꺼번에 밀린다. 빠른 건 신호"}
+
+  - layout: sources
+    title: 참고자료
+    items:
+      - {name: "OpenStax, College Physics 2e — 18.1 정전기와 전하, 18.2 도체와 부도체, 20.1 전류", use: "개념·학습 목표·수치 (openstax.org/details/books/college-physics-2e)", license: CC BY 4.0}
+      - {name: "SparkFun, What is Electricity?", use: "설명 순서와 비유 (learn.sparkfun.com/tutorials/what-is-electricity)", license: CC BY-SA 4.0}
+      - {name: "PhET Interactive Simulations — 풍선과 정전기", use: "수업 중 탐구 활동 (phet.colorado.edu)", license: PhET 이용 조건}
+      - {name: "NIST CODATA 기본 물리 상수", use: "양성자/전자 질량비 (physics.nist.gov/cuu)", license: 공공 자료}
+      - {name: "일러스트: Google Flow 생성 · 애니메이션: manim으로 자체 제작", use: "assets/SOURCES.csv 참고", license: 자체 제작}

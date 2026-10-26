@@ -1,0 +1,13 @@
+# 모든 도구(python-pptx, manim, matplotlib)가 공통으로 읽는 디자인 토큰
+font: Malgun Gothic
+colors:
+  stage: "161A33"     # 어두운 배경 (표지·질문·요약, 애니메이션 무대)
+  stage_2: "262B50"   # 어두운 배경 위 패널
+  ink: "161A33"       # 본문 글자
+  muted: "5E647D"     # 보조 글자
+  paper: "FFFFFF"     # 밝은 배경
+  soft: "F1F2F8"      # 밝은 배경 위 패널
+  line: "D9DCE8"
+  amber: "FFB400"     # 강조 = 에너지/빛
+  electron: "2EC4E6"  # 전자 (−)
+  proton: "F25C54"    # 양성자/원자핵 (+)

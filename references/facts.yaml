@@ -1,0 +1,35 @@
+# 슬라이드에 쓰는 수치의 근거. verified: 출처를 직접 확인한 날짜 (미확인 = null)
+household_voltage:
+  value: "220 V, 60 Hz"
+  note: 한국 가정용 전원. 110V→220V 승압 사업은 1973년 시작, 2005년 완료
+  source:
+    - "삼성전자서비스 고객지원: 국내 제품은 220V/60Hz 전원환경 기준 (samsungsvc.co.kr/solution/121310)"
+    - "경향신문 2005-11-03 승압사업 완료 기사 (khan.co.kr/article/200511031803461)"
+  verified: 2026-10-12   # 2차 자료로 확인. 한전 공식 규격 문서는 미확인
+  used_in: ["06"]
+elementary_charge:
+  value: "1.60 × 10⁻¹⁹ C"
+  note: 전자·양성자 전하량의 크기. 크기는 같고 부호만 반대
+  source: "OpenStax College Physics 2e, 18.1"
+  verified: 2026-10-12
+  used_in: ["01"]
+proton_electron_mass_ratio:
+  value: "약 1836"
+  note: 양성자는 전자보다 약 1836배 무겁다 → '전자는 수천 배 가볍다'
+  source: "NIST CODATA (physics.nist.gov/cgi-bin/cuu/Value?mpsme)"
+  verified: null         # 널리 알려진 값이나 NIST 페이지 직접 확인은 아직
+  used_in: ["01"]
+electron_drift_speed:
+  value: "4.53 × 10⁻⁴ m/s (약 0.45 mm/s)"
+  note: |
+    OpenStax 예제 20.3 — 12게이지(지름 2.053 mm) 구리선, 20.0 A, 자유전자 밀도 8.342×10²⁸ /m³.
+    신호는 10⁸ m/s 수준으로 전하 자체보다 약 10¹²배 빠르다.
+  source: "OpenStax College Physics 2e, 20.1 예제 20.3"
+  verified: 2026-10-12
+  used_in: ["01"]
+kepco_rate:
+  value: TODO
+  note: 05강 전기요금 계산용 주택용 누진 단가 — 최신 요금표 필요
+  source: 한국전력공사 전기요금표
+  verified: null
+  used_in: ["05"]

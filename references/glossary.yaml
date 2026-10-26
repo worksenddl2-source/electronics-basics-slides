@@ -1,0 +1,10 @@
+# 슬라이드 용어 통일 기준. easy = 비전공자용 한 줄 설명
+- {term: 원자, en: atom, easy: "모든 물질을 이루는 아주 작은 알갱이", lecture: "01"}
+- {term: 원자핵, en: nucleus, easy: "원자 한가운데의 묵직한 덩어리, (+) 전기를 띤다", lecture: "01"}
+- {term: 전자, en: electron, easy: "원자핵 주위의 아주 가벼운 알갱이, (−) 전기를 띤다", lecture: "01"}
+- {term: 전하, en: electric charge, easy: "물체가 띠고 있는 전기의 양과 종류(+/−)", unit: "C (쿨롱)", lecture: "01"}
+- {term: 정전기, en: static electricity, easy: "전자가 한쪽으로 쏠려 머물러 있는 상태", lecture: "01"}
+- {term: 전류, en: electric current, easy: "전하가 한 방향으로 흐르는 것", unit: "A (암페어)", lecture: "01, 02"}
+- {term: 자유전자, en: free electron, easy: "금속 안에서 원자에 묶이지 않고 돌아다니는 전자", lecture: "01"}
+- {term: 도체, en: conductor, easy: "전류가 잘 흐르는 물질 (구리, 알루미늄)", lecture: "01, 02"}
+- {term: 부도체, en: insulator, easy: "전류가 거의 흐르지 않는 물질 (고무, 플라스틱)", lecture: "01, 02"}

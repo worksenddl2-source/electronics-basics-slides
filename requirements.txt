@@ -1,0 +1,8 @@
+python-pptx==1.0.2
+manim==0.22.0
+matplotlib==3.11.2
+schemdraw==0.23
+PyYAML==6.0.3
+pillow==12.3.0
+av==19.0.1
+qrcode==8.2
